@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProductBroadcast</string>
+    <string name="channel_id">channel_Product</string>
+    <string name="channel_name">Product_channel</string>
+</resources>
