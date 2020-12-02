@@ -48,9 +48,9 @@ class ProductService : Service() {
             .setAutoCancel(true)
             .build()
 
-        NotificationManagerCompat.from(this).notify(notificationId,notification)
+        //NotificationManagerCompat.from(this).notify(notificationId,notification)
 
-        startForeground(1,notification)
+        startForeground(notificationId,notification)
 
         return super.onStartCommand(intent, flags, startId)
     }
