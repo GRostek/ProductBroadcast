@@ -3,6 +3,7 @@
     package="com.example.productbroadcast">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+    <uses-permission android:name="com.example.pjatkshoppinglist.NOTIFICATION_PERMISSION"></uses-permission>
 
     <application
         android:allowBackup="true"
