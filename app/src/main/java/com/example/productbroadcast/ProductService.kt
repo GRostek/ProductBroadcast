@@ -23,7 +23,6 @@ class ProductService : Service() {
         modifyActivity.putExtra("id", intent.getLongExtra("ProductID",0))
 
 
-        //notification channel wykonujemy w service
         createChannel()
 
         val pendingIntent = PendingIntent.getActivity(
@@ -34,11 +33,7 @@ class ProductService : Service() {
         )
 
         var channelId = getString(R.string.channel_id)
-                /*= intent.getStringExtra("channel_id")
 
-        if(channelId == null){
-            channelId = "channel_default"
-        }*/
 
         val notification = NotificationCompat.Builder(this, channelId)
             .setSmallIcon(R.mipmap.ic_launcher)
